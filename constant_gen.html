@@ -1,0 +1,10 @@
+<script>
+    var constant = prompt("Enter the Constant name");
+    var output = "export const " + constant + " = '" + constant + "';<br>export type " + constant + " = typeof " + constant + ";<br>";
+    var output_success = "export const " + constant + "_SUCCESS = '" + constant + "_SUCCESS';<br>export type " + constant + "_SUCCESS = typeof " + constant + "_SUCCESS;<br>";
+    var output_failure = "export const " + constant + "_FAILURE = '" + constant + "_FAILURE';<br>export type " + constant + "_FAILURE = typeof " + constant + "_FAILURE;<br>";
+
+    document.write(output);
+    document.write(output_success); document.write(output_failure);
+
+</script>

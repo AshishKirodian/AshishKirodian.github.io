@@ -1,0 +1,13 @@
+<script>
+    var func_name = prompt("Enter the Function name");
+    var URL = prompt("Enter URL");
+    var method = prompt('Enter method');
+    var line1 = "import * as constants from '';<br/>export function* " + func_name + "(actions: fileTestActionS) {<br/>try {<br/>var apiParameters = {<br/> url: " + URL + ",<br/>method: " + method + "<br/>};<br/>"
+
+    var line2 = "let response = yield call(ExternalApi.Api, apiParameters);<br/>yield put({ type: constants., payload: });<br/>} catch (e) {<br/> var snackbarState = {<br/>display: true,<br/>prompt: 'Oops!! Something went wrong'<br/>};";
+
+    var line3 = "<br/>yield put({ type: constants., payload: snackbarState })<br/>}<br/>}<br/>";
+    document.write(line1);
+    document.write(line2);
+    document.write(line3);
+</script>
