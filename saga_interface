@@ -1,1 +1,22 @@
-
+<script>
+    var interface = prompt("Enter the Interface name");
+    var constant = prompt("enter the constant");
+    var output = "export interface " + interface + "{
+    type: " + constant + ";
+    payload: {
+    };
+}";
+    var output_success = "export interface " + interface + "Success {
+    type: " + constant + "_SUCCESS;
+    payload: {
+    };
+}";
+    var output_failure = "export interface " + interface + "Failure {
+    type: " + constant + "_SUCCESS;
+    payload: {
+    };
+}";
+    document.write(output);
+    document.write(output_success);
+    document.write(output_failure);
+</script>
