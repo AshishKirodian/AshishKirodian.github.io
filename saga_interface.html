@@ -2,8 +2,8 @@
     var data = prompt("Enter the Interface name");
     var constant = prompt("enter the constant");
     var output = "export interface " + data + "<br/>{<br/>type: " + constant + ";<br/>payload: {<br/>  };<br/>}";
-	var output_success = "export interface " + data + "Success {    type: " + constant + "_SUCCESS;    payload: {    };}";
-    var output_failure = "export interface " + data + "Failure {    type: " + constant + "_SUCCESS;    payload: { message: string    };}";
+	var output_success = "export interface " + data + "Success<br/> {<br/>    type: " + constant + "_SUCCESS;<br/>    payload: {<br/>    };<br/>}";
+    var output_failure = "export interface " + data + "Failure <br/>{<br/>    type: " + constant + "_SUCCESS;    <br/>payload: {<br/> message: string    <br/>};<br/>}";
     document.write(output);
     document.write(output_success);
     document.write(output_failure);
